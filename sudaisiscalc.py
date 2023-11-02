@@ -10,9 +10,9 @@ print("4. Division.")
 
 # this is a massage that will be shown to the user asking him or her to enter any selection form the above
 # but i will be using a while loop for a good reason which is 
-# if the user in case enter an invald chose he or she will be granted another chance to re-enter another selection
+# if the user in case enter an invald choice he or she will be granted another chance to re-enter another selection
 # i am going to create a function that i will call when ever i need it
-def chose():
+def choice():
 
   while True:
 #  so what i am saying is that if everyhting is true then go ahead and run this code
@@ -37,8 +37,8 @@ def chose():
 
   return selection
      
-# chose() # this code calls out the chose function
-#  i am to comment out chose() at this level becouse i dont want call it here
+# choice() # this code calls out the choice function
+#  i am to comment out choice() at this level becouse i dont want call it here
 # ------------------------------------------------------------
 # form this point you can check if the code works 
 
@@ -46,7 +46,7 @@ def chose():
 # ==========now its the real math=====================
 # here we are going to use an if statement becouse for it, it will help use to switch with in different selections
 
-if chose() == 1:
+if choice() == 1:
   #   the above statement its an if statemen which is a boolen expiration
    firstNumber = int(input("please enter the first number ")) # the int at the beginning of the fristNumber is to convert the input in a number
    secondNumber = int(input("please enter the second number "))
@@ -54,21 +54,21 @@ if chose() == 1:
    print("the sum of ", str(firstNumber), "and ", str(secondNumber), " is ", str(result)) #the str is a string data type 
    #remember that for a print value it cant mix data types. the for we need to transform our results to and number to strings
 # /////// now i will be using an elif which is an else if statement
-elif chose() == 2:
+elif choice() == 2:
   #   the above statement its an if statemen which is a boolen expiration
    firstNumber = int(input("please enter the first number ")) # the int at the beginning of the fristNumber is to convert the input in a number
    secondNumber = int(input("please enter the second number "))
    result = firstNumber - secondNumber
    print("the difference between ", str(firstNumber), "and ", str(secondNumber), " is ", str(result))
 
-elif chose() == 3:
+elif choice() == 3:
   #   the above statement its an if statemen which is a boolen expiration
    firstNumber = int(input("please enter the first number ")) # the int at the beginning of the fristNumber is to convert the input in a number
    secondNumber = int(input("please enter the second number "))
    result = firstNumber * secondNumber
    print("the product of ", str(firstNumber), "and ", str(secondNumber), " is ", str(result))
 
-elif chose() == 4:
+elif choice() == 4:
   #   the above statement its an if statemen which is a boolen expiration
    firstNumber = int(input("please enter the first number ")) # the int at the beginning of the fristNumber is to convert the input in a number
    secondNumber = int(input("please enter the second number "))
